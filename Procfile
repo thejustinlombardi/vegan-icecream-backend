@@ -1,0 +1,1 @@
+web: gunicorn vegan_icecream_django.wsgi
