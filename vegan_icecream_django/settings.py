@@ -83,13 +83,7 @@ WSGI_APPLICATION = 'vegan_icecream_django.wsgi.application'
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'vegan_icecream',
-        'USER': 'vegan_icecreamuser',
-        'PASSWORD': 'vegan_icecream',
-        'HOST': 'localhost'
-    }
+    'default': dj_database_url.config(conn_max_age=600)
 }
 
 
